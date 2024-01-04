@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './style.css'
+import Input from './Input';
+import GetButton from './GetButton';
+import Spiner from './Spiner';
+import ResultSwapi from './ResultSwapi';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div className="container py-4 px-3 mx-auto">
+        <h1>SWAPI</h1>
+        <div className="mb-3 input-group input-group-lg">
+            <Input />
+            <GetButton />
+        </div>
+        <div className="result-swapi p-2 bg-light-subtle border rounded-2 border-light-subtle">
+            <h2>Result:</h2>
+            <Spiner />
+            <ResultSwapi />
+        </div>
+    </div>
+
+
+
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

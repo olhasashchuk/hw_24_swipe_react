@@ -1,0 +1,11 @@
+body {
+    background-color: #d2cece;
+}
+
+.item-swapi p {
+    background-color: #d2cece;
+}
+
+.spinner-border {
+    display: none;
+}
