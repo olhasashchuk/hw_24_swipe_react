@@ -1,10 +1,14 @@
-import React from 'react';
+import { Component } from 'react';
 
-class GetButton extends React.Component {
+class GetButton extends Component {
+
     render () {
+        const { onClick, disabled } = this.props;
+
         return <button
-            onClick={console.log}
+            onClick={onClick}
             className="btn btn-secondary"
+            disabled={disabled}
         >
             Get info
         </button>

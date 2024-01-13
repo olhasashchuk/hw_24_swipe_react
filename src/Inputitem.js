@@ -1,7 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 
-class Input extends React.Component {
+class Inputitem extends Component {
     render () {
+        const { disabled } = this.props;
         return <>
             <span
                 className="input-group-text"
@@ -15,10 +16,9 @@ class Input extends React.Component {
                 name="value"
                 placeholder="people/1/"
                 required
+                disabled={disabled}
             />
         </>
     }
 }
-
-
-export default Input;
+export default Inputitem;

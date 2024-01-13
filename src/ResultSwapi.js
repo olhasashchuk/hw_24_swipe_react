@@ -2,8 +2,9 @@ import React from 'react';
 
 class ResultSwapi extends React.Component {
     render () {
-        return <>
-            <div className = "item-swapi d-flex gap-3">
+        const {background} = this.props;
+        return <div style={{ background }}>
+            <div className = "item-swapi d-flex gap-3" >
                 <p className="controller-item border rounded-2">people</p>
                 <p className="id-item border rounded-2">1</p>
             </div>
@@ -36,7 +37,7 @@ class ResultSwapi extends React.Component {
                     "edited": "2014-12-20T21:17:56.891000Z",<br/>
                     "url": "https://swapi.dev/api/people/1/"<br/>
             </pre>
-        </>
+        </div>
     }
 }
 
